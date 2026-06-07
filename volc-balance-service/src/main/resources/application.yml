@@ -1,0 +1,9 @@
+# 服务端口（和 CC-Switch 脚本保持一致：56790即可）
+server:
+  port: 56790 # 一般无需修改，除非冲突
+
+# 火山引擎密钥配置（替换为你自己的 AK/SK）
+volcengine:
+  access-key: "你的火山引擎 AccessKey"
+  secret-key: "你的火山引擎 SecretKey"
+  region: "真实region" # 示例：cn-beijing / cn-shanghai
