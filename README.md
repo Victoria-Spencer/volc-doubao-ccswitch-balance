@@ -1,6 +1,6 @@
-# Volc Doubao CC Balance & Monitor Tool
+# Volc Doubao CC Balance Monitor Tool
 
-火山引擎豆包 CC 余额监控与负载均衡管理工具
+火山引擎豆包 CC 余额监控工具
 
 ---
 
@@ -29,7 +29,7 @@ volc-doubao-ccswitch-balance/
 │   ├── volc_balance_tool.py      # 图形化配置脚本
 │   └── volc-balance-service.jar  # Java服务端Jar包
 ├── dist/                 # 预打包成品目录
-│   └── VolcBalanceService.exe    # 可执行程序（内置Jar包）
+│   └── VolcBalanceTool.exe    # 可执行程序（内置Jar包）
 ├── volc-balance-service/ # Java后端源码目录
 │   ├── src/              # Java业务源码
 │   ├── pom.xml           # Maven配置文件
@@ -115,7 +115,7 @@ volc-doubao-ccswitch-balance/
     - 保持当前目录为 `builder/`，执行打包命令：
 
     ```bash
-    pyinstaller --onefile --windowed --add-data "volc-balance-service.jar;." --name VolcBalanceService volc_balance_tool.py
+    pyinstaller --onefile --windowed --name VolcBalanceTool --add-data "volc-balance-service.jar;." volc_balance_tool.py
     ```
 
     - 打包完成后，可在 `builder/dist/` 目录获取生成的可执行程序
